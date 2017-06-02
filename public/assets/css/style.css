@@ -1,0 +1,72 @@
+body {
+    background-color: #ecbf36;
+    font-family: 'Cherry Cream Soda', cursive;
+}
+
+li {
+    padding: 5px;
+    margin: 5px;
+    background: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    border-color: #000;
+    border-style: solid;
+    border-width: 1px;
+    line-height: 24px;
+    list-style-type: none;
+    list-style-position: inside;
+}
+
+li:hover { 
+    background-color: #ecbf36;
+    color: #fff;
+}
+
+ul,
+li {
+    margin: 20;
+    padding: 0;
+}
+
+button {
+    font-size: 12px;
+    height: 24px;
+    vertical-align: middle;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+.form-group {
+    margin-bottom: 5px;
+}
+
+h1,
+h2,
+h3,
+#addBurger {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid;
+    border-radius: 25px;
+}
+
+.col-md-12,
+#addBurger {
+    background-color: #36ecbd;
+    border: 2px solid;
+    border-radius: 25px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+#UserDisplayForm label {
+    display: block;
+}
+
+#UserDisplayForm div {
+    display: inline-block;
+}
