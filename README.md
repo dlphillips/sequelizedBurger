@@ -1,6 +1,6 @@
-# Eat-Da-Burger
+# Eat-Da-Sequalized-Burger
 
-This project was homework for the UNCC Coding Boot Camp. The goal was to learn the concept of separation of concerns (MVC - Model, View, Controller) through the use of Node.js, Express, MySQL, Handlebars and a custom ORM. 
+This project was homework for the UNCC Coding Boot Camp. The goal was to revise the previous Eat-Da-Burger assignment by using Sequelize as the ORM. 
 
 ## Getting Started
 
@@ -15,15 +15,15 @@ Both of these will need to be installed and running:
 
 ### Installing
 
-To load all required NPM packages, in your terminal window, navigate to the new folder and run  
+To load all required NPM packages, navigate to the new folder in your terminal window and run  
 
 ```
 npm install
 ```
 
-Within the the db folder, you will find 'schema.sql' to create the database and table as well as 'seeds.sql' that contains a few sample records to get you started... if you like.
+You will need to create a MySQL database called 'burgers_db'. Within the the db folder, you will find 'schema.sql' to create the database & table. If you wish, 'seeds.sql' contains a few sample records to get you started.
 
-To start Express, in your terminal window run  
+To start Express web server, in your terminal window run  
 
 ```
 node server
@@ -48,6 +48,7 @@ Have fun!
 * [MySQL](https://www.mysql.com/pache.org/)
 * [Handlebars](http://handlebarsjs.com/)
 * [Express](https://expressjs.com/)
+* [Sequelize](http://docs.sequelizejs.com/)
 
 ## Authors
 

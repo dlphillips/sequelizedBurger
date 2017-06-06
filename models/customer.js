@@ -1,25 +1,18 @@
 module.exports = function(sequelize, DataTypes) {
-    var Burger = sequelize.define("Burger", {
+    var Customer = sequelize.define("Customer", {
         id: {
             type: DataTypes.INTEGER,
             autoIncrement: true,
             primaryKey: true
         },
-        burger_name: {
+        name: {
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
                 len: [1]
             }
-        },
-        devoured: {
-            type: DataTypes.BOOLEAN,
-            defaultValue: false,
-        },
-        date: DataTypes.DATE
-    }, {
-        timestamps: false
+        }
     });
-    Burger.sync();
-    return Burger;
+    Customer.sync();
+    return Customer;
 };
