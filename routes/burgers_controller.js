@@ -6,7 +6,7 @@ var path = require("path");
 module.exports = function(app) {
 
     app.get("/index", function(req, res) {
-        db.Burger.findAll({ order: ['burger_name'] }).then(function(data) {
+        db.Burger.findAll( { order: ['burger_name'] }).then(function(data) {
             var hbsObject = {
                 burgers: data
             };

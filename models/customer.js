@@ -1,3 +1,5 @@
+// model for customer table... not used
+
 module.exports = function(sequelize, DataTypes) {
     var Customer = sequelize.define("Customer", {
         id: {

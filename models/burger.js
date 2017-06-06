@@ -1,3 +1,5 @@
+// burger model
+
 module.exports = function(sequelize, DataTypes) {
     var Burger = sequelize.define("Burger", {
         id: {
@@ -8,17 +10,17 @@ module.exports = function(sequelize, DataTypes) {
         burger_name: {
             type: DataTypes.STRING,
             allowNull: false,
-            validate: {
+            validate: { // if empty, do not insert new record into table
                 len: [1]
             }
         },
         devoured: {
             type: DataTypes.BOOLEAN,
-            defaultValue: false,
+            defaultValue: false, // newly entered burger is automatically uneaten
         },
         date: DataTypes.DATE
     }, {
-        timestamps: false
+        timestamps: false // use existing date field for timestamp
     });
     Burger.sync();
     return Burger;
